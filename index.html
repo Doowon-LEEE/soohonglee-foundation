@@ -329,6 +329,9 @@
   }
   ul.notice time { font-size: 13px; color: var(--muted); flex: none; font-variant-numeric: tabular-nums; }
 
+  .post-list { display: grid; gap: 22px; }
+  .gallery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: start; max-width: 900px; }
+  @media (max-width: 700px) { .gallery-grid { grid-template-columns: 1fr; } }
   .gallery-figure { margin: 0; max-width: 460px; }
   .gallery-figure img {
     display: block; width: 100%; border-radius: 4px;
@@ -469,7 +472,9 @@
           <h2 class="serif">장학회 소식</h2>
         </div>
         <ul class="notice">
-          <li><a href="#news"><span class="t"><span class="badge">공지</span>제1회 이수홍 교수상 시상식 개최 안내</span><time>2025.06.18</time></a></li>
+          <li><a href="#news"><span class="t"><span class="badge">공지</span>㈜신도기연에 감사장을 전달했습니다</span><time>2025.12.10</time></a></li>
+          <li><a href="#news"><span class="t">이준신 명예회장님께 감사패를 전달했습니다</span><time>2025.11.17</time></a></li>
+          <li><a href="#news"><span class="t">제1회 이수홍 교수상 시상식 개최 안내</span><time>2025.06.18</time></a></li>
           <li><a href="#news"><span class="t">이수홍 에너지융합기술 장학회 설립</span><time>2025.05.16</time></a></li>
         </ul>
         <div class="sec-more"><a class="text-link" href="#news">전체 소식 보기</a></div>
@@ -559,9 +564,24 @@
         </div>
         <ul class="timeline" style="max-width: 640px;">
           <li>
+            <span class="yr">2025. 12. 10</span>
+            <span class="tl-t">㈜신도기연 감사장 전달</span>
+            <p>장학기금 후원에 대한 감사의 뜻 (대표이사 박웅기)</p>
+          </li>
+          <li>
+            <span class="yr">2025. 11. 17</span>
+            <span class="tl-t">이준신 명예회장 감사패 전달</span>
+            <p>장학회 설립과 발전에 기여한 공로</p>
+          </li>
+          <li>
+            <span class="yr">2025. 10. 15</span>
+            <span class="tl-t">㈜신도기연 장학기금 후원</span>
+            <p>후원금 100만 원</p>
+          </li>
+          <li>
             <span class="yr">2025. 06. 18</span>
-            <span class="tl-t">제1회 이수홍 교수상 시상</span>
-            <p>한국전기전자재료학회 주관, 부산 BEXCO · 수상자 조은빈 (국립공주대학교)</p>
+            <span class="tl-t">제1회 이수홍 교수상 시상 · 임원 위촉</span>
+            <p>한국전기전자재료학회 주관, 부산 BEXCO · 수상자 조은빈 (국립공주대학교)<br>명예회장 이준신 · 상임고문 조은철 · 고문 조영현 위촉</p>
           </li>
           <li>
             <span class="yr">2025. 05. 16</span>
@@ -580,7 +600,12 @@
         <div class="org">
           <div class="org-row">
             <div class="org-box top"><b>대표</b><span>이의규</span></div>
-            <div class="org-box top"><b>명예회장</b><span>이준신<br>한국전기전자재료학회 융·복합태양전지연구회 위원장</span></div>
+          </div>
+          <div class="org-link" aria-hidden="true"></div>
+          <div class="org-row">
+            <div class="org-box"><b>명예회장</b><span>이준신 · 성균관대학교 교수</span></div>
+            <div class="org-box"><b>상임고문</b><span>조은철 · 성균관대학교 교수</span></div>
+            <div class="org-box"><b>고문</b><span>조영현 · 성균관대학교 교수</span></div>
           </div>
           <div class="org-link" aria-hidden="true"></div>
           <div class="org-row">
@@ -641,6 +666,7 @@
               <dt>지원대상</dt><dd>태양전지 분야를 연구하는 학사·석사·박사·박사후과정</dd>
               <dt>선발방법</dt><dd>장학위원회 자체 심사</dd>
               <dt>선발공고</dt><dd>알림마당 공지사항을 통해 안내</dd>
+              <dt>제1호 수여</dt><dd>조은빈 (국립공주대학교, 2025)</dd>
             </dl>
           </div>
           <div class="prog">
@@ -679,16 +705,36 @@
           <span class="eyebrow">공지사항</span>
           <h2 class="serif">공지</h2>
         </div>
-        <article class="post">
-          <div class="post-meta">
-            <span class="badge">공지</span>
-            <time>2025. 06. 18</time>
-          </div>
-          <h3 class="serif">제1회 이수홍 교수상 시상식 개최 안내</h3>
-          <p>2025년 6월 18일, 한국전기전자재료학회가 부산 벡스코(BEXCO)에서 제1회 이수홍 교수상 시상식을 개최하였습니다.</p>
-          <p>수상자는 국립공주대학교의 조은빈 학생이며, 시상은 한국전기전자재료학회 융·복합태양전지연구회 위원장이자 본 장학회 명예회장인 이준신 교수님께서 진행해주셨습니다.</p>
-          <p>앞으로 이수홍 교수상의 지속적인 발전과 수상자의 학문적 성취를 기원합니다.</p>
-        </article>
+        <div class="post-list">
+          <article class="post">
+            <div class="post-meta">
+              <span class="badge">공지</span>
+              <time>2025. 12. 10</time>
+            </div>
+            <h3 class="serif">㈜신도기연에 감사장을 전달했습니다</h3>
+            <p>㈜신도기연(대표이사 박웅기)께서 지난 10월 15일 장학기금 100만 원을 후원해 주셨습니다.</p>
+            <p>장학회의 설립과 발전에 귀중한 도움을 주신 데 깊이 감사드리며, 2025년 12월 10일 감사장을 전달하였습니다. 보내주신 뜻은 태양전지·에너지융합기술 분야의 인재 양성에 소중히 쓰겠습니다.</p>
+          </article>
+          <article class="post">
+            <div class="post-meta">
+              <span class="badge">공지</span>
+              <time>2025. 11. 17</time>
+            </div>
+            <h3 class="serif">이준신 명예회장님께 감사패를 전달했습니다</h3>
+            <p>장학회의 설립과 발전에 기여해 주신 공로에 감사의 뜻을 담아, 2025년 11월 17일 성균관대학교 이준신 명예회장님께 감사패를 전달하였습니다.</p>
+            <p>전달식 사진은 포토갤러리에서 보실 수 있습니다.</p>
+          </article>
+          <article class="post">
+            <div class="post-meta">
+              <span class="badge">공지</span>
+              <time>2025. 06. 18</time>
+            </div>
+            <h3 class="serif">제1회 이수홍 교수상 시상식 개최 안내</h3>
+            <p>2025년 6월 18일, 한국전기전자재료학회가 부산 벡스코(BEXCO)에서 제1회 이수홍 교수상 시상식을 개최하였습니다.</p>
+            <p>수상자는 국립공주대학교의 조은빈 학생이며, 시상은 한국전기전자재료학회 융·복합태양전지연구회 위원장이자 본 장학회 명예회장인 이준신 교수님께서 진행해주셨습니다. 수상자에게는 이수홍 장학금(제1호)이 함께 수여되었습니다.</p>
+            <p>앞으로 이수홍 교수상의 지속적인 발전과 수상자의 학문적 성취를 기원합니다.</p>
+          </article>
+        </div>
       </div>
     </div>
 
@@ -698,10 +744,16 @@
           <span class="eyebrow">포토갤러리</span>
           <h2 class="serif">장학회의 순간들</h2>
         </div>
-        <figure class="gallery-figure">
-          <img src="assets/award-2025.jpg" alt="제1회 이수홍 교수상 시상식 — 이준신 명예회장과 수상자 조은빈 학생">
-          <figcaption>제1회 이수홍 교수상 시상식 — 2025년 6월 18일, 부산 BEXCO (한국전기전자재료학회 하계학술대회)</figcaption>
-        </figure>
+        <div class="gallery-grid">
+          <figure class="gallery-figure">
+            <img src="assets/thanks-leejunsin-2025.jpg" alt="이준신 명예회장 감사패 전달">
+            <figcaption>이준신 명예회장 감사패 전달 — 2025년 11월 17일</figcaption>
+          </figure>
+          <figure class="gallery-figure">
+            <img src="assets/award-2025.jpg" alt="제1회 이수홍 교수상 시상식 — 이준신 명예회장과 수상자 조은빈 학생">
+            <figcaption>제1회 이수홍 교수상 시상식 — 2025년 6월 18일, 부산 BEXCO (한국전기전자재료학회 하계학술대회)</figcaption>
+          </figure>
+        </div>
       </div>
     </div>
 
@@ -753,6 +805,18 @@
             <p>장학기금의 원금을 늘리는 출연도 환영합니다. 자세한 절차는 사무국과 상의해 주세요.</p>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="block" style="padding-top: 0;">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow">후원해 주신 분들</span>
+          <h2 class="serif">함께해 주셔서 감사합니다</h2>
+        </div>
+        <ul class="notice" style="max-width: 720px;">
+          <li><a href="#news"><span class="t">㈜신도기연 (대표이사 박웅기) — 장학기금 후원</span><time>2025.10</time></a></li>
+        </ul>
       </div>
     </div>
 
